@@ -5,7 +5,8 @@ if not status then
 end
 
 -- 列表操作快捷键
-local list_keys = require('keybindings').nvimTreeList
+-- local list_keys = require('keybindings').nvimTreeList
+local on_attach = require('keybindings').on_attach
 nvim_tree.setup({
     -- 不显示 git 状态图标
     git = {
@@ -30,10 +31,10 @@ nvim_tree.setup({
         -- 隐藏根目录
         hide_root_folder = false,
         -- 自定义列表中快捷键
-        mappings = {
-            custom_only = false,
-            list = list_keys,
-        },
+        --mappings = {
+        --     custom_only = false,
+        --     list = list_keys,
+        -- },
         -- 不显示行数
         number = false,
         relativenumber = false,
@@ -51,8 +52,9 @@ nvim_tree.setup({
     -- wsl install -g wsl-open
     -- https://github.com/4U6U57/wsl-open/
     system_open = {
-        cmd = 'wsl-open', -- mac 直接设置为 open
+        cmd = 'open', -- mac 直接设置为 open
     },
+    on_attach = on_attach
 })
 -- 自动关闭
 vim.cmd([[

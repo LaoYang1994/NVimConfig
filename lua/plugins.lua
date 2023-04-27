@@ -20,6 +20,37 @@ packer.startup({
     use("glepnir/dashboard-nvim")
     -- treesitter
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+    -- rainbow brackets
+    use("p00f/nvim-ts-rainbow")
+    -- nvim-autopairs
+    use("windwp/nvim-autopairs")
+    --------------------- LSP --------------------
+    -- use("williamboman/nvim-lsp-installer")
+    use({ "williamboman/mason.nvim" })
+    use({ "williamboman/mason-lspconfig.nvim" })
+    -- Lspconfig
+    use({ "neovim/nvim-lspconfig" })
+    -- 补全引擎
+    use("hrsh7th/nvim-cmp")
+    -- snippet 引擎
+    use("hrsh7th/vim-vsnip")
+    -- 补全源
+    use("hrsh7th/cmp-vsnip")
+    use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
+    use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
+    use("hrsh7th/cmp-path") -- { name = 'path' }
+    use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
+
+    -- 常见编程语言代码段
+    use("rafamadriz/friendly-snippets")
+    -- ui
+    use("onsails/lspkind-nvim")
+    -- indent-blankline
+    use("lukas-reineke/indent-blankline.nvim")
+    use("tami5/lspsaga.nvim" )
+    use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
+    -- Comment
+    use("numToStr/Comment.nvim")
   end,
   config = {
     -- 并发数限制
