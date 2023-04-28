@@ -1,0 +1,70 @@
+{
+  "HEADER" : {
+    "prefix": "header",
+    "body": [
+      "#!/usr/bin/env python",
+      "# -*- encoding: utf-8 -*-",
+      "",
+      "# ------------------------------------------------------------------------------",
+      "# File    :   $TM_FILENAME",
+      "# Time    :   $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+      "# Author  :   LaoYang1994",
+      "# Version :   1.0",
+      "# Contact :   hongyang.li@tusen.ai",
+      "# Desc    :   None",
+      "# ------------------------------------------------------------------------------",
+      "",
+      "# here put the import lib",
+      "$0"
+    ]
+  },
+
+  "IPDB" : {
+    "prefix": "ipdb",
+    "body": [
+      "import ipdb; ipdb.set_trace()"
+    ]
+  },
+
+  "PARSER" : {
+    "prefix": "parser",
+    "body": [
+      "import argparse",
+      "",
+      "",
+      "def parse():",
+      "    parser = argparse.ArgumentParser()",
+      "    parser.add_argument()",
+      "",
+      "    args = parser.parse_args()",
+      "",
+      "    return args"
+    ]
+  },
+
+  "INIT" : {
+    "prefix": "init",
+    "body": [
+      "import os",
+      "import argparse",
+      "",
+      "",
+      "def parse():",
+      "    parser = argparse.ArgumentParser()",
+      "    parser.add_argument()",
+      "",
+      "    args = parser.parse_args()",
+      "",
+      "    return args",
+      "",
+      "",
+      "def main():",
+      "    args = parse()",
+      "",
+      "",
+      "if __name__ == '__main__':",
+      "    main()",
+      ""
+    ]
+  }
+}

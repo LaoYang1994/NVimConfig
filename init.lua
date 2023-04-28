@@ -15,6 +15,7 @@ require("plugin-config.nvim-treesitter")
 require("plugin-config.indent-blankline")
 require("plugin-config.nvim-autopairs")
 require("plugin-config.comment")
+require("plugin-config.vim-vsnip")
 
 -- 内置LSP
 require("lsp.setup")
